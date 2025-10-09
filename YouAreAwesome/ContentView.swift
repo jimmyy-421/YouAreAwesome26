@@ -15,19 +15,21 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Spacer()
-            
-            Image(imageName)
-                .resizable()
-                .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 30))
-                .shadow(radius: 30)
-            
             Text(message)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundStyle(.red)
                 .multilineTextAlignment(.center)
+                .minimumScaleFactor(0.5)
+                .frame(height: 100)
+                .animation(.easeInOut(duration: 0.15), value: message)
+            Image(imageName)
+                .resizable()
+                .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 30))
+                .shadow(radius: 30)
+                .animation(.default, value: imageName)
+            
             
             Spacer()
             
@@ -35,7 +37,7 @@ struct ContentView: View {
                 let messages = ["You Are Amazing!",
                                 "You Are Terrific!",
                                 "You Are Cool!",
-                                "You Are Amazing Again!"]
+                                "When the Genius Bar Needs Help, They Call You!"]
                 
                 message = messages[messageNumber]
                 messageNumber += 1
