@@ -1,5 +1,5 @@
 You Are Awesome! App for Ch. 1 of Prof. John Gallaugher's SwiftUI Courses!
-Contact me at: 
+Contact me at: jmyjlin@gmail.com
 
+<img width="311" height="624" alt="Screenshot 2025-10-10 at 16 22 36" src="https://github.com/user-attachments/assets/1679a2df-e051-4b47-b773-507faa69e270" />
 
-<img width="199" height="410" alt="Screenshot 2025-10-04 at 14 17 37" src="https://github.com/user-attachments/assets/d5e6f9cb-dfa3-4ebc-8d91-ca8363abef6e" />
